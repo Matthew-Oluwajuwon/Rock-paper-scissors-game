@@ -21,7 +21,7 @@ export const App = () => {
   const DisplayUserChoiceOnScreen = () => {
     switch (userChoice) {
       case "rock":
-       setUserChoiceDisplay(rock);
+        setUserChoiceDisplay(rock);
         break;
       case "paper":
         setUserChoiceDisplay(paper);
@@ -84,12 +84,12 @@ export const App = () => {
   };
 
   useEffect(() => {
-   DisplayUserChoiceOnScreen();
+    DisplayUserChoiceOnScreen();
   }, [userChoice]);
 
   return (
-    <div className="w-full h-screen bg-rock flex flex-col items-center justify-between">
-      <h1 className="text-center text-[3rem] text-white font-extrabold">
+    <div className="w-full h-screen bg-slate-900 flex flex-col items-center justify-between">
+      <h1 className="text-center text-[3rem] text-white font-extrabold mb:[-5rem]">
         ROCK, PAPER AND SCISSORS
       </h1>
       <div className="flex gap-10 w-[40%] md:w-full md:flex-wrap md:px-10 h-[30%] md:h-fit md:gap-20">
